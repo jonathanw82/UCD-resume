@@ -1,5 +1,6 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Exo|Roboto&display=swap');
+
 
 /*--------------------------------------------------- Colors */
 
@@ -99,7 +100,7 @@ header {
 }
 
 .title{
-    font-family: "Roboto",sans-serif;
+    font-family: "Roboto", sans-serif;
     font-weight: 200;
     font-size: 28px;
     margin-top: 20px;
