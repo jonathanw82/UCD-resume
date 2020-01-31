@@ -106,3 +106,13 @@ header {
     font-weight: 300;
     letter-spacing: 2px;
 }
+
+/*--------------------------------------------------- Hover.css */
+
+.hvr-shutter-out-vertical {
+    background-color: transparent;    
+}
+
+.hvr-shutter-out-vertical:before{
+    background: rgba(0,0,0,0.2);
+}
