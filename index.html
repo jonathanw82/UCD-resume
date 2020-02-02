@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script src="https://kit.fontawesome.com/a71ecb4f79.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css">
 	<title>Jonathan Wheway | Full Stack Developer</title>
@@ -21,7 +22,8 @@
 				<div class="row bg-color-name-title no-gutters">
 					<div class="col heading">
 						<h1 class="name">Jonathan Wheway</h1>
-						<h2 class="title">Full Stack Developer</h2>
+					<!--<h2 class="title">Full Stack Developer</h2>-->
+                        <h2 class="title">Full Stack Developer</h2>
 					</div>
 				</div>
 				<div class="row no-gutters">
@@ -203,6 +205,25 @@
 			</div>
 		</div>
 	</footer>
+    <!----------------------------------------------------- Javascript-->
+    
+var textWrapper = document.querySelector('.title');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.title .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.title',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 </body>
 
 </html>
