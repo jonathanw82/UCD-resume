@@ -366,3 +366,18 @@ button[type="submit"]{
 
 /*--------------------------------------------------- Media query */
 
+@media(min-width: 992px){
+.center-form{
+    padding-top: 30px;
+    min-height: 240px;
+    margin: 0 auto;
+    max-width: 50%;
+}
+}
+
+@media(max-width:443px){
+    .social-links{
+    padding: 0px;
+   text-align: center;
+}
+}
