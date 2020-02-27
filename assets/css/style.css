@@ -24,6 +24,10 @@
     background-color: #3498db;
 }
 
+.ui-menu-color-github{
+    background-color: #1c4a6c;
+}
+
 .ui-menu-color-download{
     background-color: #525252;
 }
@@ -119,6 +123,7 @@ header {
     margin: 0;
 }
 
+
 .menucontainer{
     font-size: 0;
 }
@@ -128,7 +133,7 @@ header {
 }
 
 #nav li {
-    font-size: 14px;
+   /* font-size: 14px; */
     padding: 0;
 }
 
