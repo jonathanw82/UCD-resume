@@ -1,4 +1,11 @@
-  
+
+function userinformatioHTML(user) {
+    return
+    `<h2>${user.name}</h2>
+    <span class= "small-name"`
+}
+
+
 function fetchGitHubInformation(event) {
 
     var username = $("#gh-username").val();
@@ -15,11 +22,11 @@ function fetchGitHubInformation(event) {
     $.when(
         $.getJSON(`https://api.github.com/users/${username}`)
     ).then(
-        function(response) {
+        function (response) {
             var userData = response;
             $("#gh-user-data").html(userInformationHTML(userData));
         },
-        function(errorResponse) {
+        function (errorResponse) {
             if (errorResponse.status === 404) {
                 $("#gh-user-data").html(
                     `<h2>No info found for user ${username}</h2>`);
